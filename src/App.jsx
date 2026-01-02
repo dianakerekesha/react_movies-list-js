@@ -1,4 +1,4 @@
-import movies from './api/movies.json';
+import moviesFromServer from './api/movies.json';
 import './App.scss';
 import { MovieList } from './components/MovieList';
 // import moviesFromServer from './api/movies.json';
@@ -6,7 +6,7 @@ import { MovieList } from './components/MovieList';
 export const App = () => (
   <div className="page">
     <div className="page-content">
-      <MovieList movies={movies} />
+      <MovieList movies={moviesFromServer} />
     </div>
 
     <div className="sidebar" data-cy="Sidebar">
